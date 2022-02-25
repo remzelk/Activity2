@@ -19,7 +19,7 @@ class HomeController extends Controller
             1=>[
                 'BlogTitle'=>'Pocket Monsters',
                 'Subtitle'=>'Pokemon',
-                'Content'=> 'Games, Mange and Anime',
+                'Content'=> 'Games, Manga and Anime',
                 'Date'=> $day[0]
             ],
             2=>[
@@ -73,7 +73,7 @@ class HomeController extends Controller
             1=>[
                 'BlogTitle'=>'Pocket Monsters',
                 'Subtitle'=>'Pokemon',
-                'Content'=> 'Games, Mange and Anime',
+                'Content'=> 'Games, Manga and Anime',
                 'Date'=> $day[0]
             ],
             2=>[
