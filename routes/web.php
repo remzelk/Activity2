@@ -12,4 +12,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/myblogs/{mm}/{dd}/{yyyy}', [myController::class, 'weekfunction']);
+
+Route::get('/myblogs/{mm}/{dd}/{yyyy}', 'HomeController@myfunction');
+
+Route::get('/myblog/{id}', function($id){
+    return view('Home.myblog');
+})->name('Home.myblog');
