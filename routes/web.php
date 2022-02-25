@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,14 +12,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('profile');
-});
-
-Route::get('/news/{mm}/{dd}/{yyyy}', function ($mm, $dd, $yyyy) {
-    return "<h1>Date: " . $mm . ", " . $dd . ", " . $yyyy . "</h1>";
-});
-
-Route::get('/About/{age?}/{name?}', function ($age = 22, $name = 'Alicia Maye Mondero') {
-    return "<h1> I am ". $name . ". I am " . $age . " years old.</h1>";
-})->where(['age' => '[1-9]+']);
+Route::get('/myblogs/{mm}/{dd}/{yyyy}', [myController::class, 'weekfunction']);
